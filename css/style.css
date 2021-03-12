@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;}
+
+.gridwrapper {
+display: grid;
+width: 1920px;;
+height: 1080px;
+
+grid-template-areas:
+    "hr hr hr "
+    "a1 a2 a2"
+    "a1 a2 a2"
+    "fo fo fo"
+    ;
+ 
+    
+}
+
+.header {
+grid-area: hr;
+width: 320px;
+height: 1080px;
+background-color: aqua;
+}
+
+.article1 {
+    grid-area: a1;
+    width: 1000px;
+    height: 340px;
+    background-color: aquamarine;
+}
+
+.article2 {
+    grid-area: a2;
+    width: 1000px;
+    height: 740px;
+    background-color: blanchedalmond;
+}
+
+.footer{
+    grid-area: fo;
+    width: 600px;
+    height: 1080px;
+    background-color: bisque;
+}
