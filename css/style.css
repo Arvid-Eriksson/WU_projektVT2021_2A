@@ -4,43 +4,41 @@
 
 .gridwrapper {
 display: grid;
-width: 1920px;;
-height: 1080px;
+width: 1080px;;
+height: 1920px;
 
 grid-template-areas:
     "hr hr hr "
-    "a1 a2 a2"
-    "a1 a2 a2"
+    "as ae ae"
+    "as ae ae"
     "fo fo fo"
     ;
- 
-    
 }
 
 .header {
 grid-area: hr;
-width: 320px;
-height: 1080px;
+width: 1080px;
+height: 220px;
 background-color: aqua;
 }
 
-.article1 {
-    grid-area: a1;
-    width: 1000px;
-    height: 340px;
-    background-color: aquamarine;
+.aside {
+    grid-area: as;
+    width: 320px;
+    height: 640px;
+    background-color: blue;
 }
 
-.article2 {
-    grid-area: a2;
-    width: 1000px;
-    height: 740px;
-    background-color: blanchedalmond;
+.area {
+    grid-area: ae;
+    width: 720px;
+    height: 640px;
+    background-color: green;
 }
 
 .footer{
     grid-area: fo;
-    width: 600px;
-    height: 1080px;
-    background-color: bisque;
+    width: 1080px;
+    height: 200px;
+    background-color: red;
 }
