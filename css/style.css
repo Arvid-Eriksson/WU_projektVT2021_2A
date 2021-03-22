@@ -4,8 +4,9 @@
 
 .gridwrapper {
 display: grid;
-width: 1080px;;
-height: 1920px;
+/* width: 1080px;;
+height: 1920px; */
+grid-template-columns: 220px auto auto;
 
 grid-template-areas:
     "hr hr hr "
@@ -17,28 +18,36 @@ grid-template-areas:
 
 .header {
 grid-area: hr;
-width: 1080px;
+width: 100%;
 height: 220px;
-background-color: aqua;
+background-color: salmon;
 }
 
 .aside {
     grid-area: as;
-    width: 320px;
+    width: 220px;
     height: 640px;
-    background-color: blue;
+    background-color: lightcoral; 
 }
 
-.area {
+.nav {
     grid-area: ae;
-    width: 720px;
+    width: 100%;
     height: 640px;
-    background-color: green;
+    background-color: whitesmoke;
 }
 
 .footer{
     grid-area: fo;
-    width: 1080px;
+    width: 100%;
     height: 200px;
-    background-color: red;
+    background-color: salmon;
+}
+#logo{
+    width: 220px;
+    height: 220px;
+}
+#bild{
+    width: 205px;
+    height: 350px;
 }
